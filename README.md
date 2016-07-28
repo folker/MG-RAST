@@ -25,6 +25,9 @@ a lot.
 ### Directories and their meaning
 
 bin/  		binaries invoked by the server
+
 cgi-bin/ 	the servers cgi-bin directory
+
 lib/		libraries for use by the server
+
 misc/		everything else
