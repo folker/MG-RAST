@@ -8,6 +8,9 @@ conf/Config.pm
 conf/FIG_Config.pm
 bin/*.r
 
+*.swo
+*.swp
+
 # ignore files with # and ~
 *\#*
 *\~*
