@@ -19,45 +19,12 @@ with local installations of this software.
 
 ### REQUIREMENTS 
 
-Hardware 
-
-MG-RAST is a pipeline, an archive, a complex
-web interface and several other tools. The entire systems was designed
-for a Linux/Unix system. We run it on a dedicated small cluster for
-the server infrastructure and heavily utilize CLOUD computing
-resources.
-
-Systems-Software
-
-1. MySQL 
-2. PostGres 
-3. Perl 
-4. R 
-5. Apache
-6. NGINX
-
-For the bioinformatics software and databases used in MG-RAST please see 
-[the tools and data entry in our blog](http://blog.metagenomics.anl.gov/tools-and-data-used-in-mg-rast/)
+a lot.
 
 
+### Directories and their meaning
 
-### INSTRUCTIONS 
-type make
-
-
-### web-v3 docker
-
-```bash
-export TAG=`date +"%Y%m%d.%H%M"`
-docker build --force-rm --no-cache --rm -t  mgrast/v3-web:${TAG} https://raw.githubusercontent.com/MG-RAST/MG-RAST/master/dockerfiles/web/Dockerfile
-skycore push mgrast/v3-web:${TAG}
-```
-
-### API server
-
-```bash
-export TAG=`date +"%Y%m%d.%H%M"`
-docker build --force-rm --no-cache --rm -t  mgrast/api:${TAG}  https://raw.githubusercontent.com/MG-RAST/MG-RAST/api/dockerfiles/api/Dockerfile
-skycore push mgrast/api:${TAG}
-```
-
+bin/  		binaries invoked by the server
+cgi-bin/ 	the servers cgi-bin directory
+lib/		libraries for use by the server
+misc/		everything else

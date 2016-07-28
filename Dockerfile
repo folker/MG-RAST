@@ -5,34 +5,35 @@ FROM httpd:2.4
 # MG-RAST dependencies
 RUN apt-get update && apt-get install -y \
   apache2 \
-  libpq-dev \
-  make \
+  blast2 \
   cdbfasta 	\
   curl \
-  perl-modules \
   liburi-perl \
   libwww-perl \
-  libjson-perl \
+  libcache-memcached-perl \
   libdbi-perl \
   libdbd-mysql-perl \
   libdbd-pg-perl \
   libdigest-md5-perl \
   libfile-slurp-perl \
   libhtml-strip-perl \
-  liblist-moreutils-perl \
-  libcache-memcached-perl \
   libhtml-template-perl \
+  libjson-perl \
+  liblist-moreutils-perl \
   libdigest-md5-perl \
   libdigest-md5-file-perl \
   libdatetime-perl \
   libdatetime-format-ISO8601-perl \
   liblist-allutils-perl \
+  libpq-dev \
   libposix-strptime-perl \
   libuuid-tiny-perl \
   libmongodb-perl \
   libfreezethaw-perl \
   libtemplate-perl \
   libclass-isa-perl \
+  make \
+  perl-modules \
 #  python-cassandra-driver \
   python-dev \
   python-lepl \
